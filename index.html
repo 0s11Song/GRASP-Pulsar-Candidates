@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GRASP:GPU-Refactored Accelerated Search Pipeline</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <main class="page">
+      <header class="masthead">
+        <div>
+          <p class="kicker">Pulsar Candidates</p>
+          <h1>GRASP:GPU-Refactored Accelerated Search Pipeline</h1>
+        </div>
+        <div class="stats" aria-label="Pulsar statistics">
+          <div>
+            <strong id="totalCount">0</strong>
+            <span>Sources</span>
+          </div>
+          <div>
+            <strong id="projectCount">0</strong>
+            <span>Projects</span>
+          </div>
+        </div>
+      </header>
+
+      <section class="simple-table" aria-label="Pulsar candidate list">
+        <h2>Source List</h2>
+        <div id="pulsarRows" class="rows"></div>
+      </section>
+
+      <section class="sky-card" aria-label="RA DEC grid">
+        <div class="sky-toolbar">
+          <div>
+            <h2>RA / DEC</h2>
+            <p>The horizontal axis is RA and the vertical axis is DEC. Each marker represents one pulsar candidate.</p>
+          </div>
+          <div id="legend" class="legend" aria-label="Project legend"></div>
+        </div>
+
+        <div class="map-wrap">
+          <div id="skyMap" class="sky-map" role="img" aria-label="Pulsar candidate positions on the RA DEC grid"></div>
+        </div>
+
+        <section id="foldPanel" class="fold-panel" hidden aria-label="Folded pulsar diagnostic plot">
+          <div class="fold-head">
+            <div>
+              <p id="foldProject" class="kicker"></p>
+              <h2 id="foldName">Select a source</h2>
+            </div>
+            <a id="foldImageLink" class="open-link" href="#" target="_blank" rel="noreferrer">Open image</a>
+          </div>
+          <div class="fold-content">
+            <figure>
+              <img id="foldImage" alt="">
+            </figure>
+            <dl class="fold-meta">
+              <div>
+                <dt>DM (pc cm<sup>-3</sup>)</dt>
+                <dd id="foldDm"></dd>
+              </div>
+              <div>
+                <dt>Period (ms)</dt>
+                <dd id="foldPeriod"></dd>
+              </div>
+              <div>
+                <dt>Discovery Date</dt>
+                <dd id="foldDiscoveryDate"></dd>
+              </div>
+              <div>
+                <dt>RA</dt>
+                <dd id="foldRa"></dd>
+              </div>
+              <div>
+                <dt>DEC</dt>
+                <dd id="foldDec"></dd>
+              </div>
+            </dl>
+          </div>
+        </section>
+      </section>
+
+    </main>
+
+    <script src="data/pulsars.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
