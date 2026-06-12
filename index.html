@@ -25,9 +25,17 @@
         </div>
       </header>
 
+      <nav class="data-links" aria-label="Machine-readable data links">
+        <a href="table.html">Plain HTML table</a>
+        <a href="data/pulsars.json">JSON data</a>
+      </nav>
+
       <section class="simple-table" aria-label="Pulsar candidate list">
         <h2>Source List</h2>
-        <div id="pulsarRows" class="rows"></div>
+        <table class="rows source-table" aria-label="Pulsar candidate source list">
+          <thead id="pulsarHeader"></thead>
+          <tbody id="pulsarRows"></tbody>
+        </table>
       </section>
 
       <section class="sky-card" aria-label="RA DEC grid">

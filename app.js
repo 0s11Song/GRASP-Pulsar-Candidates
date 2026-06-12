@@ -6,6 +6,7 @@
 
   const skyMap = document.getElementById("skyMap");
   const legend = document.getElementById("legend");
+  const headerRows = document.getElementById("pulsarHeader");
   const rows = document.getElementById("pulsarRows");
   const totalCount = document.getElementById("totalCount");
   const projectCount = document.getElementById("projectCount");
@@ -158,8 +159,7 @@
   }
 
   function renderRows() {
-    const header = document.createElement("div");
-    header.className = "row header";
+    const header = document.createElement("tr");
     [
       "Name",
       "DM (pc cm<sup>-3</sup>)",
@@ -169,15 +169,14 @@
       "DEC",
       "Project"
     ].forEach((name) => {
-      const cell = document.createElement("span");
+      const cell = document.createElement("th");
       cell.innerHTML = name;
       header.appendChild(cell);
     });
-    rows.appendChild(header);
+    headerRows.appendChild(header);
 
     pulsars.forEach((pulsar) => {
-      const row = document.createElement("div");
-      row.className = "row";
+      const row = document.createElement("tr");
       row.tabIndex = 0;
       row.title = `View folded diagnostic plot for ${pulsar.name}`;
       row.addEventListener("click", () => selectPulsar(pulsar.name, true));
@@ -196,7 +195,7 @@
         pulsar.dec,
         pulsar.project
       ].forEach((value) => {
-        const cell = document.createElement("span");
+        const cell = document.createElement("td");
         cell.textContent = value;
         row.appendChild(cell);
       });

@@ -99,6 +99,32 @@ h2 {
   font-size: 13px;
 }
 
+.data-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0 0 16px;
+}
+
+.data-links a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 34px;
+  padding: 7px 11px;
+  border: 1px solid var(--ink);
+  border-radius: 6px;
+  color: var(--ink);
+  background: var(--paper);
+  font-size: 13px;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.data-links a:hover {
+  color: #fff;
+  background: var(--ink);
+}
+
 .sky-card,
 .simple-table {
   background: var(--paper);
@@ -353,35 +379,36 @@ h2 {
 }
 
 .rows {
-  display: grid;
-  gap: 1px;
+  width: 100%;
   overflow: hidden;
   border: 1px solid var(--line);
   border-radius: 6px;
+  border-collapse: separate;
+  border-spacing: 0;
 }
 
-.row {
-  display: grid;
-  grid-template-columns: 1.1fr 1.1fr 0.85fr 0.9fr 1fr 1fr 1.1fr;
-  gap: 12px;
-  align-items: center;
-  min-height: 42px;
+.rows th,
+.rows td {
   padding: 8px 10px;
+  border-bottom: 1px solid var(--line);
   background: #fff;
   font-size: 14px;
+  text-align: left;
+  vertical-align: middle;
+  overflow-wrap: anywhere;
 }
 
-.row:not(.header) {
+.rows tbody tr {
   cursor: pointer;
 }
 
-.row:not(.header):hover,
-.row:not(.header):focus-visible {
+.rows tbody tr:hover td,
+.rows tbody tr:focus-visible td {
   background: #eef8f5;
   outline: none;
 }
 
-.row.header {
+.rows th {
   color: var(--muted);
   background: #edf2ef;
   font-size: 12px;
@@ -389,9 +416,8 @@ h2 {
   cursor: default;
 }
 
-.row span {
-  min-width: 0;
-  overflow-wrap: anywhere;
+.rows tr:last-child td {
+  border-bottom: 0;
 }
 
 @media (max-width: 760px) {
@@ -412,12 +438,10 @@ h2 {
     flex: 1;
   }
 
-  .row {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .row.header {
-    display: none;
+  .rows {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
   }
 
   .fold-content {
