@@ -16,11 +16,16 @@ The general search flow is:
 
 The FFT and FFA searches are complementary. FFT search is computationally efficient and well suited to many short-period periodic signals, while FFA search can recover signals whose pulse shapes or periods make them difficult to rank highly in the FFT domain. Combining both methods gives a broader and more robust candidate list for manual inspection and follow-up.
 
+We use [Multi](https://github.com/ifuqy/Multi) and [PICS](https://github.com/zhuww/ubc_AI) for candidates selection. 
+
 Candidate status may evolve as additional observations, timing solutions, or cross-matching results become available.
 
-## Data
+## Candidates 
 
-The searches are carried out on open-permission radio observation data. We gratefully acknowledge the principal investigators and observing teams who make their data available for further scientific use.
+The searches are carried out on FAST projects that lead by our group members and released data. 
+We gratefully acknowledge the principal investigators and observing teams who make their data available for further scientific use.
+
+## Web Page
 The web page records each source with name, position, DM, spin period, discovery date, project name, and folded diagnostic image.
 
 Detailed information is bellow:
