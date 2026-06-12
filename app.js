@@ -47,10 +47,7 @@
   function formatDecimal(value, fractionDigits) {
     const number = Number(value);
     if (!Number.isFinite(number)) return String(value);
-    return number.toLocaleString("en-US", {
-      minimumFractionDigits: fractionDigits,
-      maximumFractionDigits: fractionDigits
-    });
+    return number.toFixed(fractionDigits);
   }
 
   function formatDmValue(value) {
@@ -120,7 +117,7 @@
       marker.style.left = `${pos.x}%`;
       marker.style.top = `${pos.y}%`;
       marker.style.setProperty("--color", colorMap.get(pulsar.project));
-      marker.title = `${pulsar.name} | DM ${formatDmValue(pulsar.dm)} pc cm^-3 | Period ${formatPeriodValue(pulsar.period_ms)} ms | Discovery ${pulsar.discovery_date || "TBD"} | ${pulsar.ra}, ${pulsar.dec}`;
+      marker.title = `${pulsar.name} | DM ${formatDmValue(pulsar.dm)} pc cm^-3 | Period ${formatPeriodValue(pulsar.period_s)} s | Discovery ${pulsar.discovery_date || "TBD"} | ${pulsar.ra}, ${pulsar.dec}`;
       marker.dataset.name = pulsar.name;
       marker.addEventListener("click", () => selectPulsar(pulsar.name, true));
 
@@ -149,7 +146,7 @@
     foldImage.alt = `${pulsar.name} folded diagnostic plot`;
     foldImageLink.href = foldImage.src;
     foldDm.textContent = formatDmValue(pulsar.dm);
-    foldPeriod.textContent = formatPeriodValue(pulsar.period_ms);
+    foldPeriod.textContent = formatPeriodValue(pulsar.period_s);
     foldDiscoveryDate.textContent = pulsar.discovery_date || "TBD";
     foldRa.textContent = pulsar.ra;
     foldDec.textContent = pulsar.dec;
@@ -166,7 +163,7 @@
     [
       "Name",
       "DM (pc cm<sup>-3</sup>)",
-      "Period (ms)",
+      "Period (s)",
       "Discovery Date",
       "RA",
       "DEC",
@@ -193,7 +190,7 @@
       [
         pulsar.name,
         formatDmValue(pulsar.dm),
-        formatPeriodValue(pulsar.period_ms),
+        formatPeriodValue(pulsar.period_s),
         pulsar.discovery_date || "TBD",
         pulsar.ra,
         pulsar.dec,

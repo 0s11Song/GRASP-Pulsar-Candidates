@@ -24,7 +24,7 @@ The searches are carried out on FAST projects that lead by our group members and
 We gratefully acknowledge the principal investigators and observing teams who make their data available for further scientific use.
 
 ## Web Page
-The web page records each pulsar candidates with name, position, DM, spin period, discovery date, project name, and folded diagnostic image.
+The web page records each pulsar candidate with name, position, DM, spin period, discovery date, project name, and folded diagnostic image.
 
 Detailed information is bellow:
 (https://0s11song.github.io/GRASP-Pulsar-Candidates)
