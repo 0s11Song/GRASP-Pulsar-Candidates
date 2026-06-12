@@ -26,7 +26,5 @@ Candidate status may evolve as additional observations, timing solutions, or cro
 The searches are carried out on open-permission radio observation data. We gratefully acknowledge the principal investigators and observing teams who make their data available for further scientific use.
 The web page records each source with name, position, DM, spin period, discovery date, project name, and folded diagnostic image.
 
-The discovery date can be edited in `data/pulsars.js` with the `discovery_date` field.
-
 Detailed information is bellow:
-https://0s11song.github.io/pulsar-candidates
+https://0s11song.github.io/GRASP-Pulsar-Candidates
