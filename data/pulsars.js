@@ -38,5 +38,46 @@ window.PULSARS = [
     discovery_date: "2026-06-09",
     project: "PT2020_0050",
     image: "plots/G31.5-0.6_fold.png"
+  },
+  {
+    name: "J1825-1331",
+    ra: "18:24:53.34",
+    dec: "-13:31:35.1",
+    dm: 204.06,
+    period_s: 2.22904914584,
+    discovery_date: "2026-06-28",
+    project: "PT2025_0019",
+    image: "plots/J1825-1331_fold.png"
+  },
+  {
+    name: "J1822-1252",
+    ra: "18:22:22.22",
+    dec: "-12:52:26.4",
+    dm: 686.20,
+    period_s: 0.47082170779,
+    discovery_date: "2026-07-02",
+    project: "PT2025_0019",
+    image: "plots/J1822-1252_fold.png"
+  },
+  {
+    name: "J1823-1312",
+    ra: "18:23:37.68",
+    dec: "-13:12:01.4",
+    dm: 763.78,
+    period_s: 0.38102318018,
+    discovery_date: "2026-07-18",
+    project: "PT2025_0019",
+    image: "plots/J1823-1312_fold.png"
+  },
+  {
+    name: "J1824-1322",
+    ra: "18:24:02.73",
+    dec: "-13:21:45.1",
+    dm: 818.17,
+    period_s: 2.11350254770,
+    discovery_date: "2026-07-21",
+    project: "PT2025_0019",
+    image: "plots/J1824-1322_fold.png"
   }
+
 ];
