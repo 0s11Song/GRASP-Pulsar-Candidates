@@ -40,14 +40,14 @@ window.PULSARS = [
     image: "plots/G31.5-0.6_fold.png"
   },
   {
-    name:"J1828-1135",
+    name: "J1828-1135",
     ra: "18:28:07.43",
     dec: "-11:35:16.3",
     dm: 729.73,
     period_s: 0.13783316382,
     discovery_date: "2026-07-25",
     project: "PT2024_0141",
-    image: "plots/J1828-1135_fold.png"
+    image: "plots/J1828-1135.png"
   }
 
 
