@@ -47,7 +47,7 @@ window.PULSARS = [
     period_s: 0.13783316382,
     discovery_date: "2026-07-25",
     project: "PT2024_0141",
-    image: "plots/J1828-1135.png"
+    image: "plots/J1828-1135_fold.png"
   }
 
 
