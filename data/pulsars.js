@@ -6,6 +6,7 @@ window.PULSARS = [
     dm: 69.56,
     period_s: 0.002640456856,
     discovery_date: "2026-02-20",
+    on_web_date: "2026-06-12",
     project: "PT2024_0146",
     image: "plots/J0039+6257_fold.png"
   },
@@ -16,6 +17,7 @@ window.PULSARS = [
     dm: 15.87,
     period_s: 0.00365025396,
     discovery_date: "2026-05-01",
+    on_web_date: "2026-06-12",
     project: "PT2024_0010",
     image: "plots/J2034+3632_tracking-M01-P1-c1024b1.fits_0-15.87-0.00365027.pfd.png"
   },
@@ -26,6 +28,7 @@ window.PULSARS = [
     dm: 116.19,
     period_s: 0.28525049623,
     discovery_date: "2026-04-28",
+    on_web_date: "2026-06-12",
     project: "PT2024_0001",
     image: "plots/l15.8_b10.0_1_fold.png"
   },
@@ -36,6 +39,7 @@ window.PULSARS = [
     dm: 393.71,
     period_s: 1.70542316593,
     discovery_date: "2026-06-09",
+    on_web_date: "2026-06-12",
     project: "PT2020_0050",
     image: "plots/G31.5-0.6_fold.png"
   },
@@ -46,6 +50,7 @@ window.PULSARS = [
     dm: 729.73,
     period_s: 0.13783316382,
     discovery_date: "2026-07-25",
+    on_web_date: "2026-08-11",
     project: "PT2024_0141",
     image: "plots/J1828-1135_fold.png"
   }

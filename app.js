@@ -18,6 +18,7 @@
   const foldDm = document.getElementById("foldDm");
   const foldPeriod = document.getElementById("foldPeriod");
   const foldDiscoveryDate = document.getElementById("foldDiscoveryDate");
+  const foldOnWebDate = document.getElementById("foldOnWebDate");
   const foldRa = document.getElementById("foldRa");
   const foldDec = document.getElementById("foldDec");
   let selectedName = "";
@@ -149,6 +150,7 @@
     foldDm.textContent = formatDmValue(pulsar.dm);
     foldPeriod.textContent = formatPeriodValue(pulsar.period_s);
     foldDiscoveryDate.textContent = pulsar.discovery_date || "TBD";
+    foldOnWebDate.textContent = pulsar.on_web_date || "TBD";
     foldRa.textContent = pulsar.ra;
     foldDec.textContent = pulsar.dec;
     setSelectedMarker();
@@ -165,6 +167,7 @@
       "DM (pc cm<sup>-3</sup>)",
       "Period (s)",
       "Discovery Date",
+      "On-Web date",
       "RA",
       "DEC",
       "Project"
@@ -191,6 +194,7 @@
         formatDmValue(pulsar.dm),
         formatPeriodValue(pulsar.period_s),
         pulsar.discovery_date || "TBD",
+        pulsar.on_web_date || "TBD",
         pulsar.ra,
         pulsar.dec,
         pulsar.project

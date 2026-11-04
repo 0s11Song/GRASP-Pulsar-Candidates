@@ -24,7 +24,9 @@ The searches are carried out on FAST projects that lead by our group members and
 We gratefully acknowledge the principal investigators and observing teams who make their data available for further scientific use.
 
 ## Web Page
-The web page records each pulsar candidate with name, position, DM, spin period, discovery date, project name, and folded diagnostic image.
+The web page records each pulsar candidate with name, position, DM, spin period, discovery date, On-Web date, project name, and folded diagnostic image.
+
+On-Web date (`on_web_date` in the data files) records the date of the first Git commit listing a source on this website, using the commit's recorded calendar date. It is distinct from the discovery date and is not changed by later metadata or plot corrections. When adding a source, keep this field consistent in `data/pulsars.js`, `data/pulsars.json`, and `table.html`.
 
 Detailed information is bellow:
 (https://0s11song.github.io/GRASP-Pulsar-Candidates)
