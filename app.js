@@ -161,6 +161,8 @@
   }
 
   function renderRows() {
+    headerRows.replaceChildren();
+    rows.replaceChildren();
     const header = document.createElement("tr");
     [
       "Name",
