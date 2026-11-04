@@ -448,3 +448,22 @@ h2 {
     grid-template-columns: 1fr;
   }
 }
+
+.site-footer {
+  margin-top: 24px;
+  padding-top: 16px;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.site-footer a {
+  color: var(--accent);
+  text-underline-offset: 3px;
+  overflow-wrap: anywhere;
+}
+
+.site-footer a:hover {
+  color: var(--ink);
+}
