@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>GRASP:GPU-Refactored Accelerated Search Pipeline</title>
-    <link rel="stylesheet" href="style.css?v=footer-1">
+    <link rel="stylesheet" href="style.css?v=map-markers-1">
   </head>
   <body>
     <main class="page">
@@ -100,8 +100,6 @@
             </tr>
           </tbody>
         </table>
-        <p>The J1743-1021 coordinates are the estimated FAST M03-on beam centre (J2000, assumed 0° receiver rotation).</p>
-        <p>J1742-1114 is a provisional designation based on the estimated FAST M13-off beam centre (J2000, assumed 0° receiver rotation). The original fold plot shows the M01-on pointing.</p>
       </section>
 
       <section class="sky-card" aria-label="RA DEC grid">
@@ -114,7 +112,7 @@
         </div>
 
         <div class="map-wrap">
-          <div id="skyMap" class="sky-map" role="img" aria-label="Pulsar candidate positions on the RA DEC grid"></div>
+          <div id="skyMap" class="sky-map" role="group" aria-label="Pulsar candidate positions on the RA DEC grid"></div>
         </div>
 
         <section id="foldPanel" class="fold-panel" hidden aria-label="Folded pulsar diagnostic plot">
@@ -166,6 +164,6 @@
     </main>
 
     <script src="data/pulsars.js?v=20261113-2"></script>
-    <script src="app.js?v=on-web-date-2"></script>
+    <script src="app.js?v=map-markers-1"></script>
   </body>
 </html>

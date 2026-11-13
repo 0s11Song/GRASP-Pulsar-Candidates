@@ -112,7 +112,6 @@
       const pos = projectPosition(pulsar);
       const marker = document.createElement("button");
       const dot = document.createElement("span");
-      const label = document.createElement("span");
 
       marker.type = "button";
       marker.className = "pulsar-marker";
@@ -120,12 +119,13 @@
       marker.style.top = `${pos.y}%`;
       marker.style.setProperty("--color", colorMap.get(pulsar.project));
       marker.title = `${pulsar.name} | DM ${formatDmValue(pulsar.dm)} pc cm^-3 | Period ${formatPeriodValue(pulsar.period_s)} s | Discovery ${pulsar.discovery_date || "TBD"} | ${pulsar.ra}, ${pulsar.dec}`;
+      marker.setAttribute("aria-label", pulsar.name);
       marker.dataset.name = pulsar.name;
       marker.addEventListener("click", () => selectPulsar(pulsar.name, true));
 
       dot.className = "dot";
-      label.textContent = pulsar.name;
-      marker.append(dot, label);
+      dot.setAttribute("aria-hidden", "true");
+      marker.appendChild(dot);
       skyMap.appendChild(marker);
     }
   }
