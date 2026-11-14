@@ -64,5 +64,16 @@ window.PULSARS = [
     on_web_date: "2026-11-13",
     project: "PT2023_0048",
     image: "plots/J1742-1114_fold.png"
+  },
+  {
+    name: "J1738-1024",
+    ra: "17:37:55.51",
+    dec: "-10:23:58.7",
+    dm: 80.63,
+    period_s: 0.00561508481,
+    discovery_date: "2026-10-26",
+    on_web_date: "2026-11-14",
+    project: "PT2023_0048",
+    image: "plots/J1738-1024_fold.png"
   }
 ];
